@@ -8,6 +8,8 @@ const { EventEmitter } = require('events');
 
 const PORT = process.env.PORT || 3000;
 const PUB = path.join(__dirname, 'public');
+console.log('Carpeta del juego:', PUB);
+console.log('Existe index.html:', fs.existsSync(path.join(PUB, 'index.html')));
 const MAX_ROOM = +process.env.MAX_ROOM || 8;
 const MAX_FRAME = 64 * 1024;
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
